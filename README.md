@@ -4,7 +4,7 @@
 
 **Author**: Chung Thị Mai Anh  
 **Student ID**: 23021460  
-**Course**: Computer Networks – University of Engineering and Technology, VNU  
+**Course**: INT2213 7, Computer Networks – University of Engineering and Technology, VNU  
 **Repository**: [Harvard-CS145/routing](https://github.com/Harvard-CS145/routing)
 
 ---
@@ -34,15 +34,3 @@ Updates happen:
 
 Distance vectors are exchanged via Packet.ROUTING, encoded as JSON.
 Infinity is set to 16 to prevent count-to-infinity loops.
-
-## 📁 File Structure
-
-```plaintext
-├── DVrouter.py             # ✅ Your implementation
-├── LSrouter.py             # Unused in this project
-├── network.py              # Command-line simulator
-├── visualize_network.py    # GUI simulator (optional)
-├── test_scripts/
-│   └── test_dv_ls.sh       # Run all test JSONs
-├── *.json                  # Network test scenarios
-├── packet.py, router.py    # Simulator core classes
