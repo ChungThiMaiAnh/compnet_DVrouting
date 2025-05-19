@@ -21,19 +21,6 @@ Implemented in `DVrouter.py`, the algorithm:
 - Recomputes the entire routing table based on neighbors' advertisements
 
 ---
-
-## 📁 File Structure
-
-```plaintext
-├── DVrouter.py             # ✅ Your implementation
-├── LSrouter.py             # Unused in this project
-├── network.py              # Command-line simulator
-├── visualize_network.py    # GUI simulator (optional)
-├── test_scripts/
-│   └── test_dv_ls.sh       # Run all test JSONs
-├── *.json                  # Network test scenarios
-├── packet.py, router.py    # Simulator core classes
-
 ## Algorithm Summary
 Each router keeps:
 - routing_table: destination → (cost, next_hop)
@@ -46,5 +33,16 @@ Updates happen:
 - Periodically (heartbeat)
 
 Distance vectors are exchanged via Packet.ROUTING, encoded as JSON.
-
 Infinity is set to 16 to prevent count-to-infinity loops.
+
+## 📁 File Structure
+
+```plaintext
+├── DVrouter.py             # ✅ Your implementation
+├── LSrouter.py             # Unused in this project
+├── network.py              # Command-line simulator
+├── visualize_network.py    # GUI simulator (optional)
+├── test_scripts/
+│   └── test_dv_ls.sh       # Run all test JSONs
+├── *.json                  # Network test scenarios
+├── packet.py, router.py    # Simulator core classes
